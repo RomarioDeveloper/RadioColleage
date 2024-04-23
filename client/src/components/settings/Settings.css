@@ -1,0 +1,11 @@
+.light {
+    background-color: white; /* Белый фон для светлой темы */
+    color: black; /* Черный текст для светлой темы */
+}
+
+.dark {
+    background-color: black; /* Черный фон для темной темы */
+    color: white; /* Белый текст для темной темы */
+}
+
+

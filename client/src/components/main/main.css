@@ -1,0 +1,653 @@
+::-webkit-scrollbar {
+    width: 0; /* Ширина полосы прокрутки */
+} 
+
+.home-section {
+  position: relative;
+  background: #ffffff;
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  width: calc(100% - 80px); 
+  transition: all 0.5s ease;
+  z-index: 2;
+  overflow-x: hidden;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.header { 
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search {
+  background: #b8bec7;
+  border: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.search__input {
+  background: #b8bec7;
+  padding: 15px;
+  color: #4a4e54;
+  border: none;
+  width: 100%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.music__card{
+  height: 100vh;
+}
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pauseIcon {
+  position: absolute;
+  margin: 5px auto 70px;
+  transition: .1s ease-in-out;
+}
+
+.playIcon {
+  position: absolute;
+  margin: 5px auto 70px;
+  transition: .1s ease-in-out;
+}
+
+.music__card__item {
+  width: 288px;
+  height: 288px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #5E6E82;
+}
+
+.music__card__img:hover {
+  z-index: 1;
+  width: 288px;
+  height: 288px;
+  filter: brightness(50%);
+  background: rgba(0, 0, 0, 0.30);
+}
+
+.music__card__img {
+  content: '';
+  display: block;
+  text-align: center;
+}
+
+.music__card__img p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.music__card__img span {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.image{
+  position: relative;
+  bottom: 15px;
+  left: 150px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.AudioPlayer img {
+  position: absolute;
+  bottom: 10px;
+  top: 10px;
+  left: 55px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.gh{
+  position: fixed;
+  bottom: 0;
+  background-color: #EFEFEF;
+  color: #5E6E82;
+  width: 100%;
+  height: 85px;
+  font-size: 20px;
+  z-index: 455;
+}
+
+.but input{
+  width: 700px;
+  color: #5E6E82;
+  
+}
+
+.audio{
+  width: 100%;
+  height: 70px; 
+  position: fixed;
+  bottom: -35px;
+  right: -40px;
+  z-index: 75555555;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.rhap_container{
+  z-index: 785;
+  position: fixed;
+  bottom: 0;
+  width: 95.8%;
+}
+
+.music{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.music input{
+  width: 750px;
+
+}
+.but{
+  display: flex;
+  gap: 40px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  bottom: 45px;
+  z-index: 7899;
+  margin: 0 auto;
+}
+
+.rhap_main{
+  width: 100%;
+}
+
+.rhap_progress-indicator{
+  position: absolute;
+  left: 0;
+} 
+
+.AudioPlayer #leftBut {
+  background-image: url(../img/rewind-left.svg);
+  width: 30px;
+  height: 30px;
+  transform: scale(1.5);
+  padding: 30px 30px 0 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1.5);
+  top: 10px;
+  border: none;
+  position: absolute;
+  text-align: center;
+  left: 0px;
+  right: 110px;
+  bottom: 28px;
+} 
+
+.AudioPlayer #rightBut {
+  background-image: url(../img/rewind-right.svg);
+  width: 30px;
+  height: 30px;
+  transform: scale(1.5);
+  padding: 30px 30px 0 30px;
+  margin: 30px 30px 0 30px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) scale(1.5);
+  top: 10px;
+  border: none;
+  position: absolute;
+  text-align: center;
+  left: 110px;
+  right: 0px;
+  bottom: 28px;
+} 
+
+.rhap_main{
+  width: 100%;
+}
+
+.rhap_main-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.AudioPlayer #CloseBut {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -37px;
+  right: 15px;
+} 
+
+.butd{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 788888887;
+  right: 145px;
+  bottom: 62px;
+  gap: 10px;
+}
+
+.butd input{
+  width: 100px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #5E6E82;
+  color: var(--icon-color);
+  width: var(--icon-size);
+}
+
+.vb{
+  font-size: 24px;
+}
+
+@media screen and (max-width: 964px){ 
+  .df{
+    width: 90%;
+  }
+  .but input{
+    width: 600px;
+  }
+
+}
+
+@media screen and (max-width: 882px){
+  .but input{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 770px){
+  .but input{
+    width: 400px;
+  }
+}
+
+
+
+@media screen and (max-width: 670px){
+  .but input{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 574px){
+  .but input{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 476px){
+  .but input{
+    width: 300px;
+  }
+  .df p{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 404px){
+  .but input{
+    display: none;
+  }
+  .vb{
+    position: relative;
+    bottom: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 756px){
+  .butd{
+    position: absolute;
+    right: 65px;
+    
+  }
+}
+
+@media screen and (max-width: 624px){
+  .butd{
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width: 1542px){
+  .rhap_container{
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 1370px){
+  .rhap_container{
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 1118px){
+  .rhap_container{
+    width: 92%;
+  }
+}
+@media screen and (max-width: 990px){
+  .rhap_container{
+    width: 91%;
+  }
+}
+@media screen and (max-width: 904px){
+  .rhap_container{
+    width: 89%;
+  }
+}
+@media screen and (max-width: 778px){
+  .rhap_container{
+    width: 87%;
+  }
+}
+@media screen and (max-width: 626px){
+  .rhap_container{
+    width: 85%;
+  }
+}
+@media screen and (max-width: 590px) {
+  #rhap_current-time{
+    display: none;
+  }
+  .rhap_time{
+    display: none;
+  }
+  .separator{
+    display: none;
+  }
+  .rhap_volume-container{
+    display: none;
+  }
+  #CloseBut{
+    position: absolute;
+    left: 450px;
+    top: 43px;
+  }
+} 
+ @media screen and (max-width: 580px) {
+  #CloseBut{
+    position: absolute;
+    left: 430px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 561px) {
+  #CloseBut{
+    position: absolute;
+    left: 420px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 543px) {
+  .rhap_main-controls{
+    position: relative;
+    left: -15px;
+    top: -5px;
+  }
+}
+@media screen and (max-width: 525px) {
+  #CloseBut{
+    position: absolute;
+    left: 380px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 505px) {
+  #CloseBut{
+    position: absolute;
+    left: 360px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 489px) {
+  #CloseBut{
+    position: absolute;
+    left: 330px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 470px) {
+  #CloseBut{
+    position: absolute;
+    left: 300px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 427px) {
+  #CloseBut{
+    position: absolute;
+    left: 270px;
+    top: 43px;
+    
+  }
+}
+@media screen and (max-width: 397px) {
+  #CloseBut{
+    position: absolute;
+    left: 250px;
+    top: 43px; 
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .AudioPlayer img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  #CloseBut{
+    position: absolute;
+    left: 230px;
+    top: 43px;
+    width: 10px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  #CloseBut{
+    position: absolute;
+    left: 220px;
+    top: 43px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  #CloseBut{
+    position: absolute;
+    left: 210px;
+    top: 43px;    
+  }
+}
+
+@media screen and (max-width: 333px) {
+  #CloseBut{
+    position: absolute;
+    left: 200px;
+    top: 43px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #CloseBut{
+    position: absolute;
+    left: 190px;
+    top: 37px;
+  }
+
+  .rhap_main-controls{
+    position: relative;
+    left: -15px;
+    top: -5px;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .rhap_progress-bar{
+    width: 300px;
+    position: relative;left: -5px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .rhap_progress-bar{
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rhap_progress-bar{
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .rhap_progress-bar{
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  .rhap_progress-bar{
+    width: 200px;
+  }
+} 
+
+@media screen and (max-width: 1776px) {
+  .rhap_container {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1708px) {
+  .rhap_container {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1626px) {
+  .rhap_container {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1518px) {
+  .rhap_container {
+    margin-right:20px;
+  }
+}
+
+@media screen and (max-width: 1392px) {
+  .rhap_container {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1294px) {
+  .rhap_container {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .rhap_container {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .rhap_container {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .rhap_container {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .rhap_container {
+    margin-right: 55px;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .rhap_container {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .rhap_container {
+    margin-right: 65px;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .rhap_container {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .rhap_container {
+    margin-right: 75px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rhap_volume-container{
+    display: none;
+  }
+  
+  
+}
+
+.rhap_main-controls{
+  display: none;
+}

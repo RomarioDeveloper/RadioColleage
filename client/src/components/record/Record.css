@@ -1,0 +1,59 @@
+.music-upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    padding-top: 20px;
+  }
+
+.music-upload {
+    width: 300px;
+    height: 100px;
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.file-label {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.text-input {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin: 5px;
+}
+select {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin: 5px;
+}
+
+button {
+    background: #5E6E82;
+    color: #fff;
+    padding: 15px 0 15px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 15px 5px 15px 5px;
+}
